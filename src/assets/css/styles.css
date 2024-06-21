@@ -1,0 +1,77 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+.hero {
+    background-image: url('../images/programmer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    /* Se o texto precisar ser legível sobre o fundo */
+    padding: 100px 0;
+    text-align: center;
+    height: 60vh;
+}
+
+.hero-text {
+
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Fundo semitransparente */
+    color: white;
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Profiles Section */
+.profile-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact {
+    background: linear-gradient(90deg, #e6d753, #003b70, #0cee6a);
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
