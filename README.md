@@ -23,3 +23,5 @@ $ npm run dev
 ```
 
 
+- Como fazer deploy no github pages: https://www.youtube.com/watch?v=-weTjP3pYxs
+
